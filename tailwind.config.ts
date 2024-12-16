@@ -13,12 +13,28 @@ export default {
         foreground: "var(--foreground)",
       },
       screens:{
-        'xs': '520px',       // Extra small devices
+        'xxs': '390px',     // Extra small devices
+        'yxs':'470px' ,      // Extra small devices
+        'xs': '580px',      
         'sm': '656px',       // Small devices (unchanged)
-        'md': '765px',       // Custom medium devices
+        'mmd': '700px',
+        'md': '845px', 
+        'llg': '984px',     // Custom medium devices
         'lg': '1111px',      // Custom large devices
         'xlg': '1260px',     // Custom extra large devices
-      }
+        'xxlg': '1360px', 
+        'xxxlg': '1440px',    // Custom extra large devices
+      },
+      keyframes: {
+        scrollRing: {
+          '0%': { transform: 'translateX(0%)'},
+          '100%': { transform: 'translateX(100%)' },
+        },
+        
+      },
+      animation: {
+        ring: 'scrollRing 16s linear infinite',
+      },
     },
   },
   plugins: [],
